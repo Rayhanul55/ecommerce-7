@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is an ecomers project for making rayhan">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>ecomers project</title>
+</head>
+<body>
+     <!-- nav start  -->
+       <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+    <nav id="menu" class="hidden">
+        <ul class="nav-upper flex-space-around">
+            <li class="nav-list">
+                <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-list">
+                <a href="register.html" class="nav-link">Register</a
+                    ></li>
+            <li class="nav-list">
+                <a href="log-ing.html" class="nav-link">login</a>
+            </li>
+            <li class="nav-list">
+                <a href="index.html" class="nav-link">logout</a>
+            </li>
+            <li class="nav-list">
+                <a href="contuct.html" class="nav-link">contact</a>
+            </li>
+            <li class="nav-list">
+                <a href="profile.html" class="nav-link">
+                <img class="profile-icon" src="image/logo nav.jpg" alt="Profile"></a>
+            </li>
+        </ul>
+        <ul class="nav-lower flex-space-around">
+            <li class="nav-list">
+                <a class="nav-brand nav-link" href="index.html">Rayhan Shop</a>
+            </li>
+            <li class="nav-list">
+                <a class="nav-link" href="card.html"><span><i class="fa-solid fa-cart-shopping"></i></span>
+                    Card 2 product - $124.40
+                </a>
+            </li>
+        </ul>
+    </nav>
+     <!-- nav ends  -->
+
+     <main>
+        <section class="contuct-us">
+            <h2 class="contuct-header text-center">
+                Contuct US
+            </h2>
+            <div class="contuct-section-details flex-center">
+                <div class="contuct-form">
+                    <div class="card">
+                        <form action="" class="form">
+                            <div class="form-control flex-center">
+                                <label for="name">Name: </label>
+                                <input type="text" id="name" required autocomplete="name">
+                            </div>
+                            <div class="form-control flex-center">
+                                <label for="email">Email: </label>
+                                <input type="email" id="email" required autocomplete="email">
+                            </div>
+                            <div class="form-control flex-center">
+                                <label for="massage">Massage: </label>
+                                <textarea name="massage" id="massage"></textarea>
+                            </div>
+                            <div class="form-control flex-center">
+                                <button type="submit" class="btn contuct-btn">submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="contuct-address-map">
+                    <div class="address text-center">
+                        <i>
+                        <h4>Address</h4>
+                        <h5>Mymensingh, churkhai, pongagra</h5>
+                        <h5>4447000,Dmymensingh, road no:02</h5>
+                        <br>
+                        <h5>call: <span class="no-color">+001922475335</span></h5>
+                        </i>
+                    </div>
+                    <br>
+                    <div class="maps text-center">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3324.664676602847!2d90.39200526526963!3d24.672835253699237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1719142671199!5m2!1sen!2sbd"allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+     <!-- footer start  -->
+    <footer class="footer flex-space-around">
+        <div class="flex-space-around">
+            <label for="subscribe">Subscribe to Newslatter:</label>
+            <input type="email" id="subscribe" name="subscribe" class="footer-input" placeholder="Your Email Address">
+            <button class="btn btn-subscribe">subscribe</button>
+        </div>
+        <div>
+            <p>&copy; copyright 2024 Rayhanulb islam all right rserrved</p>
+        </div>
+    </footer>
+     <!-- footer ends  -->
+     <script src="/scripts/index.js"></script>
+</body>
+</html>

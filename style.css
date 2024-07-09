@@ -1,0 +1,555 @@
+/* reset code common cord stert */
+:root{
+    --primary-color: rgb(11,181,46);
+    --secondary-color: rgba(36,122,55,0.9);
+    --padding: 0.5rem;
+    --transition: all 0.3s;
+    --border-radius:0.6rem;
+    --box-shadow: 0.3rem 0.4rem 1rem rgba(205,202,202,0.5);
+}
+*{
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.hrdesign{
+    margin: 0.5rem 0;
+}
+.dot{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    display: inline-block;
+}
+.red{
+    background: red;
+}
+.green{
+    background: green;
+}
+.black{
+    background: black;
+}
+.section-title{
+    font-size: 2rem;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.text-center{
+    text-align: center;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-space-around{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn{
+    border: none;
+    padding: var(--padding);
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: var(--transition);
+}
+.btn:hover{
+    background-color: var(--secondary-color);
+}
+.card{
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    padding: var(--padding);
+}
+.card:hover{
+    box-shadow: 0.1rem 0.2rem 0.8rem rgb(204, 203, 203);
+}
+/* reset code common cord ends */
+
+
+/* nav bar :start  */
+#menu-icon{
+    display: none;
+}
+nav{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.nav-upper{
+    min-height: 10vh;
+    background-color: var(--primary-color);
+    padding: 1rem 0;
+}
+.nav-list{
+    transition: var(--transition);
+}
+.nav-list:hover{
+    text-decoration: overline;
+    color: #000;
+}
+.nav-link{
+    color: #fff;
+    transition: var(--transition);
+}
+.nav-link:hover{
+    color: #000000;
+}
+.profile-icon{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    filter: saturate(0);
+    transition: var(--transition);
+}
+.profile-icon:hover{
+    filter: saturate(1);
+}
+.nav-lower{
+    background-color: var(--secondary-color);
+    min-height: 10vh;
+}
+.nav-brand{
+    font-size: 2rem;
+}
+/* nav bar ends  */
+
+
+/* header start  */
+.header{
+    padding: 4rem 0;
+    height: 80vh;
+    background: url(image/banner.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.banner{
+    width: 100%;
+    height: 70%;
+    flex-direction: column;
+}
+.banner-title{
+    font-size: 4rem;
+    color: yellow;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+}
+.features{
+    width: 100%;
+}
+.feature{
+    background-color: var(--secondary-color);
+    color: #fff;
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    width: 15rem;
+    flex-direction: column;
+    gap: 1rem;
+}
+.features-icon{
+    font-size: 3rem;
+}
+/* header ends  */
+
+
+/* main start  */
+main{
+    padding: 4rem 0;
+    min-height: 80vh;
+}
+.sidebar{
+    flex: 1;
+    padding: var(--padding);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-self: flex-start;
+}
+.main-content{
+    flex: 3;
+    padding: var(--padding);
+}
+.actions-sort select{
+    padding: var(--padding);
+}
+.actions-search input{
+    width: 15rem;
+    padding: var(--padding);
+}
+.actions-search button{
+    margin-left: -0.3rem;
+    border: 1px solid;
+    padding: 0.5rem;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+.product{
+    position: relative;
+}
+.badge{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: green;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    border-radius: var(--border-radius);
+    z-index: 10;
+}
+.product-img{
+    width: 100%;
+    height: 15rem;
+    filter: saturate(0);
+    transition: var(--transition);
+}
+.product-img:hover{
+    filter: saturate(1);
+}
+.product-body{
+    padding: var(--padding);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.learn-more{
+    color: green;
+}
+/* pagi nation start  */
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination-btn{
+    border-width: 1px 1px 1px 0;
+    border-style: solid;
+}
+.pagination-btn:first-child{
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+}
+
+/* pagination ends  */
+
+
+/* product start details */
+.product-details-left{
+    flex: 1;
+}
+.product-details-left img{
+    height: 20rem;
+    width: 300rem;
+}
+.product-details-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+/* product details ends  */
+
+
+/* cart design start  */
+.cart{
+    padding: var(--padding);
+    gap: 1rem;
+}
+.cart .card{
+    margin-bottom: 1rem;
+}
+.cart-items{
+    flex: 1;
+}
+.cart-item-actions{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart-item input{
+    flex: 0.1;
+}
+.cart-item-img{
+    flex: 0.2;
+    width: 15rem;
+    height: 13rem;
+}
+.cart-item-description{
+    flex: 0.4;
+}
+.cart-item-shipping{
+    color: red;
+    margin-top: 0.5rem;
+}
+.cart-item-actions{
+    flex: 0.2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.cart-payment{
+    flex: 1;
+}
+.cart-payment-summary > div{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 1rem 0;
+}
+.cart-payment-btn{
+    width: 100%;
+}
+
+.cart-payment-methods > h2{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.cart-payment-methods > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+/* cart design ends  */
+
+
+/* register and login section start  */
+.register, .login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    min-height: 60vh;
+}
+.register .card, .login .card{
+    width: 45rem;
+}
+.form{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.form-control label{
+    flex: 0.2;
+    text-align: left;
+}
+.form-control input ,textarea{
+    flex: 0.8;
+    padding: var(--padding);
+    border: 1px solid;
+}
+.form-control textarea{
+    resize: none;
+    height: 12vh;
+}
+.form-btn-field{
+    border-radius: var(--border-radius);
+}
+.contuct-btn{
+    width: 30%;
+}
+/* register section ends  */
+
+
+/* profile start  */
+.profile{
+    flex-direction: column;
+    gap: 1rem;
+}
+.profile > .card{
+    flex-direction: column;
+    width: 300px;
+    gap: 1rem;
+}
+.profile-img{
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+/* profile ends   */
+
+
+/* contuct section start  */
+.contuct-section-details{
+    flex: 2;
+    gap: 2rem;
+}
+.contuct-form{
+    flex: 1;
+}
+.contuct-address-map{
+    flex: 1;
+}
+.address{
+    flex-direction: column;
+    gap: 0.2rem;
+}
+.no-color{
+    color: blue;
+}
+.maps iframe{
+    width: 80%;
+    border: 2px solid gray;
+}
+/* contuct section ends  */
+
+
+/* main ends  */
+
+/* footer start  */
+.footer{
+    background-color: var(--primary-color);
+    padding: 1rem;
+    min-height: 10vh;
+    color: #fff;
+    font-size: 1.1rem;
+}
+.btn-subscribe{
+    margin-left: -5px;
+    background-color: rgb(187, 181, 181);
+}
+.footer-input{
+    border: none;
+    padding: var(--padding);
+    width: 15rem;
+}
+/* footerr ends  */
+
+@media (max-width:992px) {
+    .flex-space-around{
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+    #menu-icon{
+        display: block;
+        text-align: center;
+        margin: 1rem 0;
+        cursor: pointer;
+    }
+    .hidden{
+        display: none;
+    }
+    .header{
+        height: 0%;
+    }
+    .products{
+        grid-template-columns: repeat(2, minmax(0,1fr));
+    }
+    .product-details{
+        flex-direction: column;
+    }
+    .product-details-left{
+        height: auto;
+        width: auto;
+    }
+    .cart-items, .cart-payment{
+        width: 90%;
+    }
+    .register .card, .login .card{
+        width: 90%;
+    }
+    .contuct-form{
+        width: 100%;
+    }
+    .contuct-form, input, textarea{
+        width: 80%;
+    }
+}
+@media (max-width:768px) {
+    .flex-center{
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+}
+@media (max-width:600px) {
+    .products{
+        grid-template-columns: repeat(1, minmax(0,1fr));
+    }
+    .product-details-left{
+        text-align: justify;
+    }
+}
+
+
+
+
+/* <div class="cart-items flex-space-around">
+            <div class="shoping-cart">
+                <div class="header-cart card">
+                    <h3>Shoping Cart[2 items]</h3>
+                    <div class="header-cart-options">
+                    <input type="checkbox" name="select" id="select">
+                    <label for="select">Select all items</label>
+                    <button class="btn"><i class="fa-solid fa-trash-can"></i></button>
+                    <button class="btn">SHOP MORE</button>
+                    </div>
+                </div>
+                <div class="cart1-item card flex-space-around">
+                    <input type="checkbox" name="select">
+                    <img src="image/product1.jpg" alt="product1" class="cart-item-img">
+                    <div class="cart-description">
+                        <h3>Sony V-4</h3>
+                        <h3>Headphone</h3>
+                        <h3>price: $225.99</h3>
+                        <p>free shiping</p>
+                    </div>
+                    <div class="cart-actions">
+                        <button class="btn"><i class="fa-solid fa-trash-can"></i></button>
+                        <button class="btn"><i class="fa-solid fa-plus"></i></button>
+                        <span>3</span>
+                        <button class="btn"><i class="fa-solid fa-minus"></i></button>
+                    </div>
+                </div>
+                <div class="shoping-cart">
+                    
+                    <div class="cart1-item card flex-space-around">
+                        <input type="checkbox" name="select">
+                        <img src="image/product1.jpg" alt="product1" class="cart-item-img">
+                        <div class="cart-description">
+                            <h3>Sony V-4</h3>
+                            <h3>Headphone</h3>
+                            <h3>price: $225.99</h3>
+                            <p>free shiping</p>
+                        </div>
+                        <div class="cart-actions">
+                            <button class="btn"><i class="fa-solid fa-trash-can"></i></button>
+                            <button class="btn"><i class="fa-solid fa-plus"></i></button>
+                            <span>3</span>
+                            <button class="btn"><i class="fa-solid fa-minus"></i></button>
+                        </div>
+                    </div>
+            </div>
+
+<!-- dsfgdtgdgd -->
+
+            <div class="payment-cart">
+                
+            </div>
+        </div> */
